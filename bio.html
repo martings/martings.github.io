@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bio - Mi Página</title>
+  <title>Bio - Martín E. García Solá</title>
   <link rel="stylesheet" href="css/styles.css"> <!-- Enlazamos el archivo CSS -->
 </head>
 
 <body>
   <header>
-    <h1>Mi Página</h1>
+    <h1>Martín E. García Solá</h1>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="bio.html">Bio</a></li>
         <li><a href="publicaciones.html">Publicaciones</a></li>
-        <li><a href="experiencia.html">Experiencia Docente</a></li>
-        <li><a href="consultoria.html">Consultoría</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <!-- saco consultoria por ahora <li><a href="consultoria.html">Consultoría</a></li> -->
       </ul>
     </nav>
   </header>
@@ -25,12 +25,30 @@
   <main>
     <section>
       <h2>Sobre mí</h2>
-      <p>Breve descripción sobre ti y tus intereses.</p>
+      <div class="profile">
+        <div class="justify-text">
+            <p>Biólogo molecular de formación convertido en bioinformático y científico de datos.</p>
+            <p>La cantidad de información generada en biología por secuenciación masiva, tecnologias de resolucion de una célula única y técnicas de visión por computadora me orientaron hacia campo del análisis de datos y la inteligencia artificial para buscar una conciliación entre los datos y cómo construir herramientas, programas y modelos que permiten entender los secretos que hay detrás.</p>
+            <p>Estoy interesado en las aplicaciones del aprendizaje automático y el aprendizaje profundo para resolver problemas de la vida real.</p>
+  
+        </div>
+        <div class="profile-image">
+          <img src="img/foto_mia.jpg" alt="Foto de perfil" width="200" height="200">
+        </div>
+      </div>
     </section>
 
     <section>
       <h2>Habilidades</h2>
       <ul>
+        <li>R: Tidyverse (dplyr, tidyr, ggplot2, stringr), Shiny, BioConductor.
+        </li>
+        <li>Python: Numpy, Pandas, Scikit learn, Scikit image, PyTorch, Tensorflow.</li>
+        <li>Git</li>
+        <li>Bash</li>
+        <li>Jupyter</li>
+        <li>Power BI</li>
+        <li>SQL</li>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
@@ -39,7 +57,7 @@
   </main>
 
   <footer>
-    <p>Derechos de autor &copy; 2023 | Mi Página</p>
+    <p>Derechos de autor &copy; 2023 Martín E. García Solá</p>
   </footer>
 </body>
 

@@ -59,4 +59,21 @@ section ul {
   list-style-type: disc;
 }
 
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.profile-image {
+  margin-left: 20px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+.justify-text {
+  text-align: justify;
+}
+
 /* Estilos adicionales según tus preferencias */

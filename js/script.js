@@ -1,34 +1,29 @@
 // scripts.js
+// Obtén una referencia al botón de cambio de idioma
 const languageToggle = document.getElementById('language-toggle');
-const currentLanguage = localStorage.getItem('language');
 
-// Verificar el idioma actual almacenado en localStorage
-if (currentLanguage) {
-  setLanguage(currentLanguage);
-}
+// Agrega un controlador de eventos al botón
+languageToggle.addEventListener('click', function() {
+  // Obtiene todos los elementos de texto que deseas cambiar
+  const elementsToTranslate = document.querySelectorAll('.translate');
 
-// Manejar el evento clic del botón de cambio de idioma
-languageToggle.addEventListener('click', () => {
-  const newLanguage = toggleLanguage();
-  setLanguage(newLanguage);
-});
+  // Itera sobre los elementos y cambia el texto según el idioma seleccionado
+  elementsToTranslate.forEach(function(element) {
+    if (element.dataset.language === 'spanish') {
+      // Cambiar al español
+      element.textContent = element.dataset.spanish;
+    } else if (element.dataset.language === 'english') {
+      // Cambiar al inglés
+      element.textContent = element.dataset.english;
+    }
+  });
 
-// Función para cambiar el idioma actual y almacenarlo en localStorage
-function toggleLanguage() {
-  const currentLanguage = localStorage.getItem('language');
-  const newLanguage = currentLanguage === 'es' ? 'en' : 'es';
-  localStorage.setItem('language', newLanguage);
-  return newLanguage;
-}
-
-// Función para establecer el idioma en la página
-function setLanguage(language) {
-  // Implementa lógica para cambiar el contenido en los elementos HTML según el idioma seleccionado
-  if (language === 'en') {
-    languageToggle.textContent = 'Español';
-    // Modifica otros elementos HTML para mostrar el contenido en inglés
-  } else {
+  // Cambia el idioma del botón
+  if (languageToggle.dataset.language === 'spanish') {
     languageToggle.textContent = 'English';
-    // Modifica otros elementos HTML para mostrar el contenido en español
+    languageToggle.dataset.language = 'english';
+  } else if (languageToggle.dataset.language === 'english') {
+    languageToggle.textContent = 'Español';
+    languageToggle.dataset.language = 'spanish';
   }
-}
+});

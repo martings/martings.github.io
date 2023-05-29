@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martín E. García Solá</title>
   <link rel="stylesheet" href="css/styles.css"> <!-- Enlazamos el archivo CSS -->
+  <script src="js/script.js"></script> <!-- Enlazamos el archivo Java Script para el cambio de idioma -->
+
 </head>
 
 <body>
@@ -20,11 +22,14 @@
         <!-- saco consultoria por ahora <li><a href="consultoria.html">Consultoría</a></li> -->
       </ul>
     </nav>
+    <button id="language-toggle"data-language="english">English</button>
+    <button id="language-toggle" data-language="spanish">Español</button>
+
   </header>
 
   <main>
     <section>
-      <h2>Bienvenido a mi página</h2>
+      <h2 class="translate" data-spanish="Bienvenido a mi página" data-english="Welcome to my page"></h2>
       <div class="profile">
         <div class="profile-text">
             <p>Soy un biólogo molecular de formación con un doctorado de la Universidad de Buenos Aires en bioinformática y ciencia de datos.</p> 

@@ -1,14 +1,33 @@
 /* Estilos generales */
 body {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 20px; /* Añadir márgenes internos */
 }
 
 header {
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 h1 {
@@ -43,12 +62,6 @@ h2 {
   margin-top: 0;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
 
 /* Estilos específicos para la página de bio */
 section p {

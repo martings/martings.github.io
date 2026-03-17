@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada — Martín E. García Solá</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Martín E. García Solá</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú / Open menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"
+              data-lang-es="Inicio" data-lang-en="Home">Inicio</a></li>
+          <li><a href="about.html"
+              data-lang-es="Sobre mí" data-lang-en="About">Sobre mí</a></li>
+          <li><a href="research.html"
+              data-lang-es="Investigación" data-lang-en="Research">Investigación</a></li>
+          <li><a href="projects.html"
+              data-lang-es="Proyectos" data-lang-en="Projects">Proyectos</a></li>
+          <li><a href="pipelines.html"
+              data-lang-es="Pipelines" data-lang-en="Pipelines">Pipelines</a></li>
+          <li><a href="teaching.html"
+              data-lang-es="Docencia" data-lang-en="Teaching">Docencia</a></li>
+          <li><a href="contact.html"
+              data-lang-es="Contacto" data-lang-en="Contact">Contacto</a></li>
+        </ul>
+        <div class="nav-lang">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="error-page">
+      <div class="error-code">404</div>
+      <h2 data-lang-es="Página no encontrada" data-lang-en="Page not found"
+        >Página no encontrada</h2>
+      <p data-lang-es="Es posible que la página que buscás haya sido movida o eliminada."
+         data-lang-en="The page you are looking for may have moved or been removed."
+        >Es posible que la página que buscás haya sido movida o eliminada.</p>
+      <a href="index.html" class="btn btn-primary"
+        data-lang-es="← Ir al inicio"
+        data-lang-en="← Go to home">← Ir al inicio</a>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Martín E. García Solá</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var toggle = document.getElementById('navToggle');
+    var links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  </script>
+
+</body>
+</html>

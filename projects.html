@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos de Martín E. García Solá — próximamente.">
+  <meta property="og:title" content="Proyectos — Martín E. García Solá">
+  <meta property="og:url" content="https://martings.github.io/projects.html">
+  <link rel="canonical" href="https://martings.github.io/projects.html">
+  <title>Proyectos — Martín E. García Solá</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Martín E. García Solá</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú / Open menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"
+              data-lang-es="Inicio" data-lang-en="Home">Inicio</a></li>
+          <li><a href="about.html"
+              data-lang-es="Sobre mí" data-lang-en="About">Sobre mí</a></li>
+          <li><a href="research.html"
+              data-lang-es="Investigación" data-lang-en="Research">Investigación</a></li>
+          <li><a href="projects.html" class="active"
+              data-lang-es="Proyectos" data-lang-en="Projects">Proyectos</a></li>
+          <li><a href="pipelines.html"
+              data-lang-es="Pipelines" data-lang-en="Pipelines">Pipelines</a></li>
+          <li><a href="teaching.html"
+              data-lang-es="Docencia" data-lang-en="Teaching">Docencia</a></li>
+          <li><a href="contact.html"
+              data-lang-es="Contacto" data-lang-en="Contact">Contacto</a></li>
+        </ul>
+        <div class="nav-lang">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="placeholder-section">
+      <div class="placeholder-icon">🚧</div>
+      <h2 data-lang-es="Proyectos" data-lang-en="Projects">Proyectos</h2>
+      <p data-lang-es="Esta sección está en construcción. Pronto encontrarás aquí los proyectos de código abierto, herramientas y recursos desarrollados."
+         data-lang-en="This section is under construction. Open-source projects, tools, and resources will be listed here soon."
+        >Esta sección está en construcción. Pronto encontrarás aquí los proyectos de código abierto, herramientas y recursos desarrollados.</p>
+      <a href="index.html" class="btn btn-primary"
+        data-lang-es="← Volver al inicio"
+        data-lang-en="← Back to home">← Volver al inicio</a>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Martín E. García Solá</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var toggle = document.getElementById('navToggle');
+    var links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  </script>
+
+</body>
+</html>

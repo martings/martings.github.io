@@ -257,7 +257,7 @@
       "My research has addressed mammary gland biology, viral oncogenesis and RNA regulation. Today, my interests center on gene regulation, including alternative polyadenylation, and its study through single-cell and spatial transcriptomics.",
       "I work as Lead Bioinformatician at ZS and teach in the Departamento de Computación (DC), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires. My computational interests include reproducible workflows, HPC/GPU computing and deep learning."
     ],
-    "portrait": "Abstract composition of cellular forms, spatial domains and flowing contours.",
+    "portrait": "Portrait of Martín E. García Solá",
     "connect": "Contact & professional profiles",
     "connectDesc": "Contact details and links to my public work.",
     "email": "Email",
@@ -285,7 +285,8 @@
         "label": "Public software projects",
         "url": "#projects"
       }
-    ]
+    ],
+    "socialImageAlt": "Abstract composition of cellular forms, spatial domains and flowing contours."
   },
   "es": {
     "nav": [
@@ -385,7 +386,7 @@
       "Mi investigación abarcó biología de la glándula mamaria, oncogénesis viral y regulación del RNA. Actualmente me interesan la regulación génica, incluida la poliadenilación alternativa, y su estudio mediante transcriptómica de célula única y espacial.",
       "Trabajo como Lead Bioinformatician en ZS y soy docente del Departamento de Computación (DC), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires. Mis intereses computacionales incluyen flujos reproducibles, computación HPC/GPU y aprendizaje profundo."
     ],
-    "portrait": "Composición abstracta de formas celulares, dominios espaciales y curvas de nivel.",
+    "portrait": "Retrato de Martín E. García Solá",
     "connect": "Contacto y perfiles profesionales",
     "connectDesc": "Datos de contacto y enlaces a mi trabajo público.",
     "email": "Correo",
@@ -413,6 +414,7 @@
         "label": "Proyectos públicos de software",
         "url": "#projects"
       }
-    ]
+    ],
+    "socialImageAlt": "Composición abstracta de formas celulares, dominios espaciales y curvas de nivel."
   }
 }

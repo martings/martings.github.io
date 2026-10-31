@@ -1,0 +1,29 @@
+[
+  {
+    "id": "mgs",
+    "name": "MGS",
+    "label": "MGS · Perfil académico",
+    "description": "Identidad por iniciales, nombre completo y especialidad. Composición editorial en verde oscuro.",
+    "className": "brand-mgs",
+    "en": "Computational biology and scientific software development.",
+    "es": "Biología computacional y desarrollo de software científico."
+  },
+  {
+    "id": "megas",
+    "name": "Megas",
+    "label": "Megas · Software científico",
+    "description": "Marca personal con énfasis en métodos computacionales y desarrollo de software. Paleta azul y tipografía sans serif.",
+    "className": "brand-megas",
+    "en": "Scientific software for single-cell and spatial omics.",
+    "es": "Software científico para ómicas de célula única y espaciales."
+  },
+  {
+    "id": "megas-spatial",
+    "name": "Megas",
+    "label": "Megas · Single-cell & spatial",
+    "description": "Megas / Bioinformagician: bioinformática de célula única y espacial, regulación génica y APA, HPC y deep learning.",
+    "className": "brand-spatial",
+    "en": "Single Cell y Spatial",
+    "es": "Single Cell y Spatial"
+  }
+]

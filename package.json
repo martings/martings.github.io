@@ -1,0 +1,13 @@
+{
+  "name": "martings-scientific-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/site.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

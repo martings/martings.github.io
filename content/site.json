@@ -1,0 +1,418 @@
+{
+  "person": {
+    "name": "Martín E. García Solá",
+    "github": "https://github.com/martings",
+    "orcid": "https://orcid.org/0000-0002-0229-8870",
+    "email": "martin.garciasola@zs.com"
+  },
+  "publications": [
+    {
+      "year": 2026,
+      "title": "GxP-Ready Single-Cell RNA-seq and Spatial Transcriptomics End-to-End Pipeline for Clinical Research",
+      "authors": "Amaya Zaratiegui, Timothy Burfield, Helle Rus Povlsen, Martín E. García Solá, Adrian Czaban, Keng Soh, Vivek Das",
+      "journal": "Computational and Structural Biotechnology Journal",
+      "citation": "35(1), 0164",
+      "doi": "10.34133/csbj.0164",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/42454105/"
+    },
+    {
+      "year": 2022,
+      "title": "PTHrP induces STAT5 activation, secretory differentiation and accelerates mammary tumor development",
+      "authors": "Diego Y. Grinman, Kata Boras-Granic, Farzin M. Takyar, Pamela Dann, Julie R. Hens, Christina Marmol, Jongwon Lee, Jungmin Choi, Lewis A. Chodosh, Martin E. Garcia Sola, John J. Wysolmerski",
+      "journal": "Breast Cancer Research",
+      "citation": "24, 30",
+      "doi": "10.1186/s13058-022-01523-1",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/35440032/"
+    },
+    {
+      "year": 2021,
+      "title": "An Integrative Single-cell Transcriptomic Atlas of the Post-natal Mouse Mammary Gland Allows Discovery of New Developmental Trajectories in the Luminal Compartment",
+      "authors": "Martín E. García Solá, Micaela Stedile, Inés Beckerman, Edith C. Kordon",
+      "journal": "Journal of Mammary Gland Biology and Neoplasia",
+      "citation": "26, 29–42",
+      "doi": "10.1007/s10911-021-09488-1",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/33913090/"
+    },
+    {
+      "year": 2021,
+      "title": "A Non-Coding RNA Network Involved in KSHV Tumorigenesis",
+      "authors": "Julián Naipauer, Martín E. García Solá, Daria Salyakina, Santas Rosario, Sion Williams, Omar Coso, Martín C. Abba, Enrique A. Mesri, Ezequiel Lacunza",
+      "journal": "Frontiers in Oncology",
+      "citation": "11, 687629",
+      "doi": "10.3389/fonc.2021.687629",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/34222014/"
+    },
+    {
+      "year": 2020,
+      "title": "Dengue virus targets RBM10 deregulating host cell splicing and innate immune response",
+      "authors": "Berta Pozzi, Laureano Bragado, Pablo Mammi, María Florencia Torti, Nicolás Gaioli, Leopoldo G. Gebhard, Martín E. García Solá, Rita Vaz-Drago, Néstor G. Iglesias, Cybele C. García, Andrea V. Gamarnik, Anabella Srebrow",
+      "journal": "Nucleic Acids Research",
+      "citation": "48(12), 6824–6838",
+      "doi": "10.1093/nar/gkaa340",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/32432721/"
+    }
+  ],
+  "projects": [
+    {
+      "name": "scPolASeq",
+      "repo": "martings/scPolASeq",
+      "tags": [
+        "Nextflow",
+        "single-cell",
+        "APA"
+      ],
+      "kind": [
+        "Personal project",
+        "Proyecto personal"
+      ],
+      "en": "A Nextflow pipeline for discovering and quantifying alternative polyadenylation in single-cell RNA-seq, from read reconstruction to coverage-aware analysis.",
+      "es": "Pipeline de Nextflow para descubrir y cuantificar poliadenilación alternativa en RNA-seq de célula única, desde la reconstrucción de lecturas hasta el análisis de cobertura."
+    },
+    {
+      "name": "scPolASeq_downstream",
+      "repo": "martings/scPolASeq_downstream",
+      "tags": [
+        "Python",
+        "notebooks",
+        "APA"
+      ],
+      "kind": [
+        "Personal project",
+        "Proyecto personal"
+      ],
+      "en": "Python package for downstream analysis of scPolASeq outputs, integrating cell annotation, poly(A) site usage, enrichment analysis and reproducible notebooks.",
+      "es": "Paquete de Python para el análisis downstream de scPolASeq, que integra anotación celular, uso de sitios de poliadenilación, análisis de enriquecimiento y notebooks reproducibles."
+    },
+    {
+      "name": "scAPAview",
+      "repo": "martings/scAPAview",
+      "tags": [
+        "Python",
+        "visualization"
+      ],
+      "kind": [
+        "Personal project",
+        "Proyecto personal"
+      ],
+      "en": "Python toolkit for visualizing poly(A) site usage, genomic coverage, gene tracks and metagene profiles.",
+      "es": "Herramientas de Python para visualizar el uso de sitios de poliadenilación, cobertura genómica, modelos de genes y perfiles de metagenes."
+    },
+    {
+      "name": "scpolaseq_utrnet",
+      "repo": "martings/scpolaseq_utrnet",
+      "tags": [
+        "Python",
+        "3′UTR",
+        "networks"
+      ],
+      "kind": [
+        "Experimental",
+        "Experimental"
+      ],
+      "en": "Experimental framework for constructing candidate 3′UTR regulatory networks from scPolASeq outputs, combining poly(A) site usage with annotation and sequence-based predictions.",
+      "es": "Marco experimental para construir redes regulatorias candidatas de la región 3′UTR a partir de scPolASeq, integrando uso de sitios de poliadenilación, anotaciones y predicciones basadas en secuencia."
+    },
+    {
+      "name": "NNclinSSOAP",
+      "repo": "NovoNordisk-OpenSource/nnclinssoap",
+      "tags": [
+        "Nextflow",
+        "R",
+        "spatial"
+      ],
+      "kind": [
+        "Collaboration · Novo Nordisk & ZS",
+        "Colaboración · Novo Nordisk y ZS"
+      ],
+      "en": "Single-cell and spatial omics workflows developed collaboratively with Novo Nordisk and ZS. Original repository maintained by NovoNordisk-OpenSource; accompanying paper published in 2026.",
+      "es": "Flujos de trabajo de ómicas de célula única y espaciales desarrollados en colaboración con Novo Nordisk y ZS. Repositorio original de NovoNordisk-OpenSource; artículo publicado en 2026.",
+      "doi": "10.34133/csbj.0164"
+    },
+    {
+      "name": "JOMG-Garcia_Sola_et_al",
+      "repo": "martings/JOMG-Garcia_Sola_et_al",
+      "tags": [
+        "single-cell",
+        "research code"
+      ],
+      "kind": [
+        "Research · García Solá et al.",
+        "Investigación · García Solá et al."
+      ],
+      "en": "Data and analysis code accompanying the 2021 post-natal mouse mammary gland atlas, with Micaela Stedile, Inés Beckerman and Edith C. Kordon.",
+      "es": "Datos y código del atlas de la glándula mamaria posnatal de ratón de 2021, junto a Micaela Stedile, Inés Beckerman y Edith C. Kordon.",
+      "doi": "10.1007/s10911-021-09488-1"
+    },
+    {
+      "name": "SVantigen",
+      "repo": "collaborativebioinformatics/SVantigen",
+      "tags": [
+        "Nextflow",
+        "structural variants",
+        "GPU"
+      ],
+      "kind": [
+        "Community collaboration",
+        "Colaboración comunitaria"
+      ],
+      "en": "A collaborative workflow exploring structural variants and candidate neoantigens. Developed with the collaborativebioinformatics team; neoantigen prediction remains future work.",
+      "es": "Flujo colaborativo que explora variantes estructurales y neoantígenos candidatos. Desarrollado con el equipo de collaborativebioinformatics; la predicción de neoantígenos sigue siendo trabajo futuro."
+    }
+  ],
+  "en": {
+    "nav": [
+      "Home",
+      "Research",
+      "Software & Projects",
+      "Publications",
+      "Teaching",
+      "About & Contact"
+    ],
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "language": "Leer en español",
+    "eyebrow": "Bioinformagician",
+    "hero": "Martín E. García Solá",
+    "intro": "I work on gene regulation and alternative polyadenylation (APA) through single-cell and spatial analysis. My computational interests include reproducible workflows, high-performance computing and deep learning.",
+    "role": "Lead Bioinformatician at ZS",
+    "degree": "Departamento de Computación - Universidad de Buenos Aires",
+    "cta": "Explore repositories",
+    "secondary": "Read papers",
+    "location": "Buenos Aires, Argentina",
+    "figure": "Single-cell & spatial transcriptomics",
+    "figureCaption": "Schematic illustration",
+    "figLabels": [
+      "Cellular profiles",
+      "Cell populations",
+      "Tissue organization"
+    ],
+    "strip": [
+      "Single-cell & spatial",
+      "Gene regulation · APA",
+      "HPC · Deep learning"
+    ],
+    "researchLabel": "01 / Research",
+    "researchTitle": "Research & computational methods",
+    "researchIntro": "My work connects gene regulation with cellular and tissue-level analysis, supported by reproducible software and scalable computing.",
+    "research": [
+      [
+        "Single-cell & spatial",
+        "Cell identity, developmental trajectories and tissue organization studied through single-cell and spatial transcriptomics."
+      ],
+      [
+        "Gene regulation & APA",
+        "RNA processing and alternative polyadenylation as mechanisms of post-transcriptional gene regulation, with a focus on poly(A) site usage and 3′UTR diversity."
+      ],
+      [
+        "HPC & reproducible workflows",
+        "Development of portable analysis workflows with Nextflow, containers and HPC/GPU infrastructure for computational biology."
+      ],
+      [
+        "Deep learning",
+        "An interest in representation learning and deep learning methods for biological data, with attention to model evaluation and biological interpretation."
+      ]
+    ],
+    "projectLabel": "02 / Software & Projects",
+    "projectTitle": "Scientific software & collaborative projects",
+    "projectIntro": "Public repositories for RNA regulation, single-cell and spatial analysis, alongside collaborative workflow development. Related papers are linked where available.",
+    "featured": "Featured / Gene regulation & APA",
+    "repo": "View repository",
+    "paper": "Related paper",
+    "workflow": [
+      "Reads",
+      "Cell groups",
+      "Poly(A) sites",
+      "Usage & coverage"
+    ],
+    "workflowCaption": "scPolASeq · conceptual workflow",
+    "pubLabel": "03 / Publications",
+    "pubTitle": "Selected publications",
+    "pubIntro": "Selected papers on single-cell and spatial analysis, gene regulation and cancer biology.",
+    "authors": "Authors",
+    "doi": "Read article",
+    "teachLabel": "04 / Teaching",
+    "teachTitle": "Teaching & educational resources",
+    "teachIntro": "University teaching and practical training in bioinformatics, sequencing analysis and programming for biological research.",
+    "course": "Tópicos de Bioinformática",
+    "courseDesc": "Open educational resources in Spanish for students and professionals exploring bioinformatics.",
+    "materials": "Explore course materials",
+    "teaching": [
+      [
+        "Departamento de Computación · UBA",
+        "Teaching in the Departamento de Computación (DC), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires."
+      ],
+      [
+        "NGS Bioinformatics LATAM · 2020–2023",
+        "Instructor with the NGS LATAM team in courses organized by Wellcome Genome Campus Advanced Courses."
+      ],
+      [
+        "Introductory R · 2019",
+        "Course organization and teaching of R for biological sciences."
+      ]
+    ],
+    "aboutLabel": "05 / About & Contact",
+    "aboutTitle": "Bioinformatician, researcher & educator",
+    "bio": [
+      "I am a bioinformatician with a background in molecular biology and a PhD from Universidad de Buenos Aires. My work combines biological research, computational analysis and scientific software development.",
+      "My research has addressed mammary gland biology, viral oncogenesis and RNA regulation. Today, my interests center on gene regulation, including alternative polyadenylation, and its study through single-cell and spatial transcriptomics.",
+      "I work as Lead Bioinformatician at ZS and teach in the Departamento de Computación (DC), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires. My computational interests include reproducible workflows, HPC/GPU computing and deep learning."
+    ],
+    "portrait": "Abstract composition of cellular forms, spatial domains and flowing contours.",
+    "connect": "Contact & professional profiles",
+    "connectDesc": "Contact details and links to my public work.",
+    "email": "Email",
+    "footer": "Personal portfolio · research, software & teaching",
+    "top": "Back to top",
+    "notfound": "Page not found",
+    "notfoundDesc": "This address may have changed. Explore the portfolio from the homepage.",
+    "home": "Go to the homepage",
+    "meta": "Megas · Martín E. García Solá. Bioinformatician, Lead Bioinformatician at ZS and DC–UBA educator. Single-cell, spatial, gene regulation, APA, HPC and deep learning.",
+    "heroLead": "Single Cell y Spatial",
+    "researchLinks": [
+      {
+        "label": "Spatial workflows · repository",
+        "url": "https://github.com/NovoNordisk-OpenSource/nnclinssoap"
+      },
+      {
+        "label": "scPolASeq · repository",
+        "url": "https://github.com/martings/scPolASeq"
+      },
+      {
+        "label": "SVantigen · collaborative repository",
+        "url": "https://github.com/collaborativebioinformatics/SVantigen"
+      },
+      {
+        "label": "Public software projects",
+        "url": "#projects"
+      }
+    ]
+  },
+  "es": {
+    "nav": [
+      "Inicio",
+      "Investigación",
+      "Software y proyectos",
+      "Publicaciones",
+      "Docencia",
+      "Sobre mí y contacto"
+    ],
+    "skip": "Saltar al contenido",
+    "menu": "Menú",
+    "language": "Read in English",
+    "eyebrow": "Bioinformago",
+    "hero": "Martín E. García Solá",
+    "intro": "Trabajo en regulación génica y poliadenilación alternativa (APA) a través del análisis de célula única y espacial. Mis intereses computacionales incluyen flujos reproducibles, computación de alto rendimiento y aprendizaje profundo.",
+    "role": "Lead Bioinformatician en ZS",
+    "degree": "Departamento de Computación - Universidad de Buenos Aires",
+    "cta": "Explorar repositorios",
+    "secondary": "Leer papers",
+    "location": "Buenos Aires, Argentina",
+    "figure": "Transcriptómica de célula única y espacial",
+    "figureCaption": "Ilustración esquemática",
+    "figLabels": [
+      "Perfiles celulares",
+      "Poblaciones celulares",
+      "Organización del tejido"
+    ],
+    "strip": [
+      "Célula única y espacial",
+      "Regulación génica · APA",
+      "HPC · Aprendizaje profundo"
+    ],
+    "researchLabel": "01 / Investigación",
+    "researchTitle": "Investigación y métodos computacionales",
+    "researchIntro": "Mi trabajo conecta la regulación génica con el análisis celular y tisular, mediante software reproducible y computación escalable.",
+    "research": [
+      [
+        "Célula única y espacial",
+        "Identidad celular, trayectorias de desarrollo y organización tisular estudiadas mediante transcriptómica de célula única y espacial."
+      ],
+      [
+        "Regulación génica y APA",
+        "Procesamiento del RNA y poliadenilación alternativa como mecanismos de regulación génica postranscripcional, con foco en el uso de sitios de poliadenilación y la diversidad de la región 3′UTR."
+      ],
+      [
+        "HPC y flujos reproducibles",
+        "Desarrollo de flujos de análisis portables con Nextflow, contenedores e infraestructura HPC/GPU para biología computacional."
+      ],
+      [
+        "Aprendizaje profundo",
+        "Interés en aprendizaje de representaciones y métodos de deep learning para datos biológicos, con atención a la evaluación de modelos y la interpretación biológica."
+      ]
+    ],
+    "projectLabel": "02 / Software y proyectos",
+    "projectTitle": "Software científico y proyectos colaborativos",
+    "projectIntro": "Repositorios públicos para regulación del RNA, análisis de célula única y espacial, junto con desarrollo colaborativo de flujos de análisis. Los artículos relacionados se enlazan cuando están disponibles.",
+    "featured": "Destacado / Regulación génica y APA",
+    "repo": "Ver repositorio",
+    "paper": "Artículo relacionado",
+    "workflow": [
+      "Lecturas",
+      "Grupos celulares",
+      "Sitios de poli(A)",
+      "Uso y cobertura"
+    ],
+    "workflowCaption": "scPolASeq · flujo conceptual",
+    "pubLabel": "03 / Publicaciones",
+    "pubTitle": "Publicaciones seleccionadas",
+    "pubIntro": "Papers seleccionados sobre análisis de célula única y espacial, regulación génica y biología del cáncer.",
+    "authors": "Autoría",
+    "doi": "Leer artículo",
+    "teachLabel": "04 / Docencia",
+    "teachTitle": "Docencia y recursos educativos",
+    "teachIntro": "Docencia universitaria y formación práctica en bioinformática, análisis de secuenciación y programación para investigación biológica.",
+    "course": "Tópicos de Bioinformática",
+    "courseDesc": "Recursos educativos abiertos en español para estudiantes y profesionales que exploran la bioinformática.",
+    "materials": "Explorar los materiales",
+    "teaching": [
+      [
+        "Departamento de Computación · UBA",
+        "Docencia en el Departamento de Computación (DC), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires."
+      ],
+      [
+        "NGS Bioinformatics LATAM · 2020–2023",
+        "Docente del equipo NGS LATAM en cursos organizados por Wellcome Genome Campus Advanced Courses."
+      ],
+      [
+        "Introducción a R · 2019",
+        "Organización y docencia de un curso de R para ciencias biológicas."
+      ]
+    ],
+    "aboutLabel": "05 / Sobre mí y contacto",
+    "aboutTitle": "Bioinformático, investigador y docente",
+    "bio": [
+      "Soy bioinformático, con formación en biología molecular y un doctorado de la Universidad de Buenos Aires. Mi trabajo integra investigación biológica, análisis computacional y desarrollo de software científico.",
+      "Mi investigación abarcó biología de la glándula mamaria, oncogénesis viral y regulación del RNA. Actualmente me interesan la regulación génica, incluida la poliadenilación alternativa, y su estudio mediante transcriptómica de célula única y espacial.",
+      "Trabajo como Lead Bioinformatician en ZS y soy docente del Departamento de Computación (DC), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires. Mis intereses computacionales incluyen flujos reproducibles, computación HPC/GPU y aprendizaje profundo."
+    ],
+    "portrait": "Composición abstracta de formas celulares, dominios espaciales y curvas de nivel.",
+    "connect": "Contacto y perfiles profesionales",
+    "connectDesc": "Datos de contacto y enlaces a mi trabajo público.",
+    "email": "Correo",
+    "footer": "Portfolio personal · investigación, software y docencia",
+    "top": "Volver al inicio",
+    "notfound": "Página no encontrada",
+    "notfoundDesc": "Es posible que esta dirección haya cambiado. Podés explorar el portfolio desde el inicio.",
+    "home": "Ir al inicio",
+    "meta": "Megas · Martín E. García Solá. Bioinformático, Lead Bioinformatician en ZS y docente del DC–UBA. Célula única, espacial, regulación génica, APA, HPC y aprendizaje profundo.",
+    "heroLead": "Single Cell y Spatial",
+    "researchLinks": [
+      {
+        "label": "Flujos espaciales · repositorio",
+        "url": "https://github.com/NovoNordisk-OpenSource/nnclinssoap"
+      },
+      {
+        "label": "scPolASeq · repositorio",
+        "url": "https://github.com/martings/scPolASeq"
+      },
+      {
+        "label": "SVantigen · repositorio colaborativo",
+        "url": "https://github.com/collaborativebioinformatics/SVantigen"
+      },
+      {
+        "label": "Proyectos públicos de software",
+        "url": "#projects"
+      }
+    ]
+  }
+}

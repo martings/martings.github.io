@@ -35,7 +35,7 @@ Titles, years, complete author lists, journal and DOI verified against the follo
 
 ## Assets and design
 
-Original img/foto_mia.jpg retained in the repository but no longer displayed. It is replaced by assets/megas-field.svg, an original parametric composition of contours and cellular/spatial motifs, with a PNG export for social previews. The inline single-cell/spatial SVG and favicon are original code-native illustrations, not scientific data. System fonts require no third-party requests. No paper figures, unpublished plots or institutional logos were reused.
+Original img/foto_mia.jpg is restored in About at the owner’s request. The abstract assets/megas-field.svg and PNG remain separate artwork; the PNG is used for social previews. The inline single-cell/spatial SVG and favicon are original code-native illustrations, not scientific data. System fonts require no third-party requests. No paper figures, unpublished plots or institutional logos were reused.
 
 ## Remaining owner review
 

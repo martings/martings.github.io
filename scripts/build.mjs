@@ -1,9 +1,11 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const data = JSON.parse(await fs.readFile(path.join(root, 'content/site.json'), 'utf8'));
 const variants = JSON.parse(await fs.readFile(path.join(root, 'content/branding.json'), 'utf8'));
+const styleVersion = createHash('sha256').update(await fs.readFile(path.join(root, 'css/styles.css'))).digest('hex').slice(0, 10);
 const esc = value => String(value).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const ids = ['home','research','projects','publications','teaching','about'];
 const base = 'https://martings.github.io';
@@ -17,7 +19,7 @@ function head(lang, missing=false, assetPrefix=null) {
  '<meta name="description" content="'+esc(t.meta)+'"><meta name="theme-color" content="#f5f4ee">'+
  (missing?'<meta name="robots" content="noindex">':'<link rel="canonical" href="'+url+'"><link rel="alternate" hreflang="en" href="'+base+'/"><link rel="alternate" hreflang="es" href="'+base+'/es/"><link rel="alternate" hreflang="x-default" href="'+base+'/">')+
  '<meta property="og:type" content="website"><meta property="og:title" content="'+esc(data.person.name)+'"><meta property="og:description" content="'+esc(t.meta)+'"><meta property="og:url" content="'+url+'"><meta property="og:locale" content="'+(lang==='en'?'en_US':'es_AR')+'"><meta property="og:image" content="'+base+'/assets/megas-field.png"><meta property="og:image:alt" content="'+esc(t.socialImageAlt)+'"><meta name="twitter:card" content="summary">'+
- '<link rel="icon" type="image/svg+xml" href="'+prefix+'assets/favicon.svg"><link rel="stylesheet" href="'+prefix+'css/styles.css">';
+ '<link rel="icon" type="image/svg+xml" href="'+prefix+'assets/favicon.svg"><link rel="stylesheet" href="'+prefix+'css/styles.css?v='+styleVersion+'">';
 }
 function schematic(t,lang) {
  const spanish=lang==='es';

@@ -20,7 +20,7 @@ Open http://127.0.0.1:4321/ (English) or http://127.0.0.1:4321/es/ (Spanish). St
 - scripts/build.mjs: shared semantic template and URL migration map. Run build after changing content/templates.
 - css/styles.css: responsive design, focus states, reduced motion and print styles.
 - js/site.js: optional mobile navigation and section-preserving language switch.
-- assets/megas-field.svg: original abstract composition, with PNG export for social sharing. The personal portrait in img/foto_mia.jpg is displayed in About.
+- assets/latent-landscape-paper-*: owner-selected paper-tone landscape, in responsive WebP and JPEG. Earlier abstract SVG/PNG studies remain available as source assets. The personal portrait in img/foto_mia.jpg is displayed in About.
 - index.html and es/index.html: generated, tracked static output. Do not edit them directly.
 - docs/SOURCES.md: editorial sources and verification limits.
 

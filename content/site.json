@@ -286,7 +286,9 @@
         "url": "#projects"
       }
     ],
-    "socialImageAlt": "Abstract composition of cellular forms, spatial domains and flowing contours."
+    "socialImageAlt": "Abstract latent landscape with single-cell clusters distributed across a folded surface.",
+    "heroArtAlt": "Abstract latent landscape with single-cell clusters distributed across a folded surface.",
+    "heroArtCaption": "Single Cell & Spatial · conceptual illustration"
   },
   "es": {
     "nav": [
@@ -415,6 +417,8 @@
         "url": "#projects"
       }
     ],
-    "socialImageAlt": "Composición abstracta de formas celulares, dominios espaciales y curvas de nivel."
+    "socialImageAlt": "Paisaje latente abstracto con clusters de células únicas distribuidos sobre una superficie plegada.",
+    "heroArtAlt": "Paisaje latente abstracto con clusters de células únicas distribuidos sobre una superficie plegada.",
+    "heroArtCaption": "Single Cell y Spatial · ilustración conceptual"
   }
 }

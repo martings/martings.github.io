@@ -1052,3 +1052,10 @@ h2 {
 
 /* Restore the personal portrait in About; artwork remains separate. */
 .portrait.is-photo img {aspect-ratio:1;object-fit:cover;object-position:center;filter:grayscale(1);background:transparent;}
+
+/* Approved paper-tone landscape, integrated into the page background. */
+.brand-spatial .science-figure.paper-landscape {width:min(1000px,100%);padding:0;background:transparent;box-shadow:none;}
+.paper-landscape picture,.paper-landscape img {display:block;width:100%;}
+.paper-landscape img {height:auto;}
+.paper-landscape figcaption {color:var(--muted);font-size:10px;text-align:center;margin-top:8px;}
+@media(max-width:650px){.brand-spatial .science-figure.paper-landscape{width:100%;}}

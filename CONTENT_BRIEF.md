@@ -37,3 +37,5 @@ The owner selected the third, spatial direction. Megas is now the default brand,
 ## Display preferences
 
 Show both English and Spanish versions in every design handoff. Above the name use only Bioinformagician (EN) / Bioinformago (ES). Below the name use the exact shared label Single Cell y Spatial. Replace the hero degree line with Departamento de Computación - Universidad de Buenos Aires; the academic background may still mention the PhD in prose. Replace the displayed photo with original abstract SVG artwork, without AI-generated images.
+
+Selected hero image: paper-background color adaptation C of the owner-provided latent landscape. Keep the personal portrait in About. Hero artwork is conceptual, with responsive WebP and JPEG fallback, and is not described as a measured embedding.

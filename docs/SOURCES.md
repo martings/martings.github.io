@@ -42,3 +42,5 @@ Original img/foto_mia.jpg is restored in About at the owner’s request. The abs
 Verify preferred public contact address and exact job-title wording before eventual publication; both are already supported by the brief/public sources. Add the exact LinkedIn URL if wanted. No placeholder links are visible on the site. The owner authorized publication of the approved website on 31 October 2026.
 
 Megas update: the owner supplied the preferred Bioinformagician/Bioinformago identity, deep-learning focus and current DC–UBA teaching affiliation. The displayed background now follows that wording and omits the earlier research-institute affiliation.
+
+Selected hero artwork: the owner supplied an externally generated raster reference and selected color adaptation C. Conventional color, contrast and paper-background adjustments were made without AI regeneration. It is presented as a conceptual illustration, not experimental data. Original source remains local; only optimized approved derivatives are published. The personal portrait remains in About.

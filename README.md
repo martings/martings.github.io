@@ -16,7 +16,7 @@ Open http://127.0.0.1:4321/ (English) or http://127.0.0.1:4321/es/ (Spanish). St
 
 ## Editing
 
-- content/site.json: EN/ES editorial copy, public project URLs and verified publication metadata.
+- content/site.json: EN/ES editorial copy, public project URLs, the featured project, curated project groups, report links, teaching resources and verified publication metadata.
 - scripts/build.mjs: shared semantic template and URL migration map. Run build after changing content/templates.
 - css/styles.css: responsive design, focus states, reduced motion and print styles.
 - js/site.js: optional mobile navigation and section-preserving language switch.
@@ -24,7 +24,7 @@ Open http://127.0.0.1:4321/ (English) or http://127.0.0.1:4321/es/ (Spanish). St
 - index.html and es/index.html: generated, tracked static output. Do not edit them directly.
 - docs/SOURCES.md: editorial sources and verification limits.
 
-All six sections are available as anchors in both languages. Publication titles and author names retain the published spelling. Language selection is an ordinary link, with no JavaScript dependency. The SVG is a conceptual illustration, not a data visualization.
+All six sections are available as anchors in both languages. Within Software & Projects, #deep-learning, #rna-apa and #collaborations provide direct links to the curated areas. Every project has a stable ID; the group lists and featuredProject field must include each project exactly once. Publication titles and author names retain the published spelling. Language selection is an ordinary link, with no JavaScript dependency. The SVG is a conceptual illustration, not a data visualization.
 
 ## Checks
 

@@ -39,3 +39,7 @@ The owner selected the third, spatial direction. Megas is now the default brand,
 Show both English and Spanish versions in every design handoff. Above the name use only Bioinformagician (EN) / Bioinformago (ES). Below the name use the exact shared label Single Cell y Spatial. Replace the hero degree line with Departamento de Computación - Universidad de Buenos Aires; the academic background may still mention the PhD in prose. Replace the displayed photo with original abstract SVG artwork, without AI-generated images.
 
 Selected hero image: paper-background color adaptation C of the owner-provided latent landscape. Keep the personal portrait in About. Hero artwork is conceptual, with responsive WebP and JPEG fallback, and is not described as a measured embedding.
+
+## Public project update — 27 November 2026
+
+UTRNNet now supports a concrete deep-learning portfolio entry: heterogeneous GNN implementation, masked reconstruction, public exploratory evaluation reports and a bounded Tahoe expression-change pilot. Keep scPolASeq-UTRNet as the separate evidence-aware regulatory graph builder. Organize projects into deep learning, RNA/APA tools and collaborations, retaining scPolASeq as the featured workflow. Link relevant public reports and preserve their limitations. Machine-learning teaching notebooks are educational resources. Deliver the update as an open PR for owner review; do not merge or deploy it.

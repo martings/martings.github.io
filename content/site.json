@@ -57,16 +57,63 @@
       "name": "scPolASeq",
       "repo": "martings/scPolASeq",
       "tags": [
-        "Nextflow",
+        "Nextflow DSL2",
         "single-cell",
-        "APA"
+        "APA",
+        "nf-test"
       ],
       "kind": [
         "Personal project",
         "Proyecto personal"
       ],
-      "en": "A Nextflow pipeline for discovering and quantifying alternative polyadenylation in single-cell RNA-seq, from read reconstruction to coverage-aware analysis.",
-      "es": "Pipeline de Nextflow para descubrir y cuantificar poliadenilación alternativa en RNA-seq de célula única, desde la reconstrucción de lecturas hasta el análisis de cobertura."
+      "en": "A modular Nextflow DSL2 workflow for single-cell APA discovery and quantification, integrating STARsolo, Sierra and optional SCAPTURE. Recent public work adds a Sierra CountPeaks module following nf-core conventions, staged SCAPTURE processes and nf-test suites.",
+      "es": "Flujo modular de Nextflow DSL2 para descubrir y cuantificar APA en célula única, que integra STARsolo, Sierra y SCAPTURE opcional. El trabajo público reciente incorpora un módulo de Sierra CountPeaks siguiendo convenciones nf-core, procesos de SCAPTURE por etapas y pruebas con nf-test.",
+      "id": "scpolaseq"
+    },
+    {
+      "id": "utrnnet",
+      "name": "UTRNNet",
+      "repo": "martings/UTRNNet",
+      "tags": [
+        "PyTorch Geometric",
+        "GNN",
+        "self-supervised learning"
+      ],
+      "kind": [
+        "Research prototype · deep learning",
+        "Prototipo de investigación · deep learning"
+      ],
+      "en": "Learns representations of 3′UTR regulatory graphs with heterogeneous graph neural networks in PyTorch Geometric. Extends scPolASeq-UTRNet with masked feature reconstruction and evaluation on held-out genes.",
+      "es": "Aprende representaciones de grafos regulatorios de la región 3′UTR mediante redes neuronales sobre grafos heterogéneos en PyTorch Geometric. Extiende scPolASeq-UTRNet con reconstrucción de características enmascaradas y evaluación sobre genes reservados para prueba.",
+      "details": {
+        "en": [
+          "Preserves node and relation types, evidence categories and missing measurements.",
+          "Includes non-graph baselines, randomized-edge controls and checks for target leakage.",
+          "A bounded Tahoe-100M pilot evaluates expression changes using regulatory priors; the dataset provides no APA readouts."
+        ],
+        "es": [
+          "Conserva tipos de nodos y relaciones, categorías de evidencia y mediciones faltantes.",
+          "Incluye modelos de referencia sin grafos, controles con aristas aleatorizadas y comprobaciones de fuga de información del objetivo.",
+          "Un piloto acotado con Tahoe-100M evalúa cambios de expresión usando información regulatoria previa; ese conjunto no aporta mediciones de APA."
+        ]
+      },
+      "resources": [
+        {
+          "url": "https://github.com/martings/UTRNNet/blob/main/docs/architecture/CELL_REGULATORY_STATE_V0_1.md",
+          "en": "Model architecture",
+          "es": "Arquitectura del modelo"
+        },
+        {
+          "url": "https://github.com/martings/UTRNNet/blob/main/docs/experiments/M1_M2_EXPERIMENT_REPORT_AND_BACKLOG.md",
+          "en": "PBMC graph-learning report",
+          "es": "Informe de aprendizaje sobre grafos en PBMC"
+        },
+        {
+          "url": "https://github.com/martings/UTRNNet/blob/main/docs/experiments/TAHOE_PILOT_BENCHMARK.md",
+          "en": "Tahoe perturbation pilot",
+          "es": "Piloto de perturbaciones con Tahoe"
+        }
+      ]
     },
     {
       "name": "scPolASeq_downstream",
@@ -81,7 +128,8 @@
         "Proyecto personal"
       ],
       "en": "Python package for downstream analysis of scPolASeq outputs, integrating cell annotation, poly(A) site usage, enrichment analysis and reproducible notebooks.",
-      "es": "Paquete de Python para el análisis downstream de scPolASeq, que integra anotación celular, uso de sitios de poliadenilación, análisis de enriquecimiento y notebooks reproducibles."
+      "es": "Paquete de Python para el análisis downstream de scPolASeq, que integra anotación celular, uso de sitios de poliadenilación, análisis de enriquecimiento y notebooks reproducibles.",
+      "id": "scpolaseq-downstream"
     },
     {
       "name": "scAPAview",
@@ -95,10 +143,11 @@
         "Proyecto personal"
       ],
       "en": "Python toolkit for visualizing poly(A) site usage, genomic coverage, gene tracks and metagene profiles.",
-      "es": "Herramientas de Python para visualizar el uso de sitios de poliadenilación, cobertura genómica, modelos de genes y perfiles de metagenes."
+      "es": "Herramientas de Python para visualizar el uso de sitios de poliadenilación, cobertura genómica, modelos de genes y perfiles de metagenes.",
+      "id": "scapaview"
     },
     {
-      "name": "scpolaseq_utrnet",
+      "name": "scPolASeq-UTRNet",
       "repo": "martings/scpolaseq_utrnet",
       "tags": [
         "Python",
@@ -106,11 +155,24 @@
         "networks"
       ],
       "kind": [
-        "Experimental",
-        "Experimental"
+        "Exploratory regulatory graphs",
+        "Grafos regulatorios exploratorios"
       ],
-      "en": "Experimental framework for constructing candidate 3′UTR regulatory networks from scPolASeq outputs, combining poly(A) site usage with annotation and sequence-based predictions.",
-      "es": "Marco experimental para construir redes regulatorias candidatas de la región 3′UTR a partir de scPolASeq, integrando uso de sitios de poliadenilación, anotaciones y predicciones basadas en secuencia."
+      "en": "Builds population-specific 3′UTR regulatory graphs from scPolASeq outputs, connecting poly(A) site usage with transcript annotation and candidate RBP/miRNA interactions. Versioned graph and regulatory-signature formats support reuse by UTRNNet.",
+      "es": "Construye grafos regulatorios de la región 3′UTR por población celular a partir de scPolASeq, conectando el uso de sitios de poliadenilación con anotaciones de transcriptos e interacciones candidatas de RBP/miRNA. Los formatos versionados de grafos y firmas regulatorias permiten su reutilización en UTRNNet.",
+      "id": "utrnet",
+      "resources": [
+        {
+          "url": "https://github.com/martings/scpolaseq_utrnet/blob/main/docs/contracts/UTRNET_GRAPH_V0_1.md",
+          "en": "Graph data contract",
+          "es": "Contrato de datos del grafo"
+        },
+        {
+          "url": "https://github.com/martings/scpolaseq_utrnet/blob/main/docs/contracts/REGULATORY_SIGNATURE_V0_1.md",
+          "en": "Regulatory signatures",
+          "es": "Firmas regulatorias"
+        }
+      ]
     },
     {
       "name": "NNclinSSOAP",
@@ -126,7 +188,8 @@
       ],
       "en": "Single-cell and spatial omics workflows developed collaboratively with Novo Nordisk and ZS. Original repository maintained by NovoNordisk-OpenSource; accompanying paper published in 2026.",
       "es": "Flujos de trabajo de ómicas de célula única y espaciales desarrollados en colaboración con Novo Nordisk y ZS. Repositorio original de NovoNordisk-OpenSource; artículo publicado en 2026.",
-      "doi": "10.34133/csbj.0164"
+      "doi": "10.34133/csbj.0164",
+      "id": "nnclinssoap"
     },
     {
       "name": "JOMG-Garcia_Sola_et_al",
@@ -141,7 +204,8 @@
       ],
       "en": "Data and analysis code accompanying the 2021 post-natal mouse mammary gland atlas, with Micaela Stedile, Inés Beckerman and Edith C. Kordon.",
       "es": "Datos y código del atlas de la glándula mamaria posnatal de ratón de 2021, junto a Micaela Stedile, Inés Beckerman y Edith C. Kordon.",
-      "doi": "10.1007/s10911-021-09488-1"
+      "doi": "10.1007/s10911-021-09488-1",
+      "id": "mammary-atlas"
     },
     {
       "name": "SVantigen",
@@ -156,7 +220,8 @@
         "Colaboración comunitaria"
       ],
       "en": "A collaborative workflow exploring structural variants and candidate neoantigens. Developed with the collaborativebioinformatics team; neoantigen prediction remains future work.",
-      "es": "Flujo colaborativo que explora variantes estructurales y neoantígenos candidatos. Desarrollado con el equipo de collaborativebioinformatics; la predicción de neoantígenos sigue siendo trabajo futuro."
+      "es": "Flujo colaborativo que explora variantes estructurales y neoantígenos candidatos. Desarrollado con el equipo de collaborativebioinformatics; la predicción de neoantígenos sigue siendo trabajo futuro.",
+      "id": "svantigen"
     }
   ],
   "en": {
@@ -173,7 +238,7 @@
     "language": "Leer en español",
     "eyebrow": "Bioinformagician",
     "hero": "Martín E. García Solá",
-    "intro": "I work on gene regulation and alternative polyadenylation (APA) through single-cell and spatial analysis. My computational interests include reproducible workflows, high-performance computing and deep learning.",
+    "intro": "I work on gene regulation and alternative polyadenylation (APA) through single-cell and spatial analysis. My software work spans Nextflow workflows, HPC/GPU computing and graph neural networks for RNA regulation.",
     "role": "Lead Bioinformatician at ZS",
     "degree": "Departamento de Computación - Universidad de Buenos Aires",
     "cta": "Explore repositories",
@@ -208,13 +273,13 @@
         "Development of portable analysis workflows with Nextflow, containers and HPC/GPU infrastructure for computational biology."
       ],
       [
-        "Deep learning",
-        "An interest in representation learning and deep learning methods for biological data, with attention to model evaluation and biological interpretation."
+        "Deep learning & regulatory graphs",
+        "Developing heterogeneous graph neural networks in UTRNNet to learn RNA regulatory representations, with masked feature reconstruction, held-out-gene evaluation and exploratory perturbation benchmarks."
       ]
     ],
     "projectLabel": "02 / Software & Projects",
     "projectTitle": "Scientific software & collaborative projects",
-    "projectIntro": "Public repositories for RNA regulation, single-cell and spatial analysis, alongside collaborative workflow development. Related papers are linked where available.",
+    "projectIntro": "Public software organized around single-cell APA workflows, graph deep learning and collaborative research. Each project links to its repository and, where available, its methods, evaluation reports or associated papers.",
     "featured": "Featured / Gene regulation & APA",
     "repo": "View repository",
     "paper": "Related paper",
@@ -255,7 +320,7 @@
     "bio": [
       "I am a bioinformatician with a background in molecular biology and a PhD from Universidad de Buenos Aires. My work combines biological research, computational analysis and scientific software development.",
       "My research has addressed mammary gland biology, viral oncogenesis and RNA regulation. Today, my interests center on gene regulation, including alternative polyadenylation, and its study through single-cell and spatial transcriptomics.",
-      "I work as Lead Bioinformatician at ZS and teach in the Departamento de Computación (DC), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires. My computational interests include reproducible workflows, HPC/GPU computing and deep learning."
+      "I work as Lead Bioinformatician at ZS and teach in the Departamento de Computación (DC), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires. My current software work includes reproducible workflows, HPC/GPU computing and graph neural networks for RNA regulatory representations."
     ],
     "portrait": "Portrait of Martín E. García Solá",
     "connect": "Contact & professional profiles",
@@ -282,13 +347,21 @@
         "url": "https://github.com/collaborativebioinformatics/SVantigen"
       },
       {
-        "label": "Public software projects",
-        "url": "#projects"
+        "label": "Explore UTRNNet & public reports",
+        "url": "#deep-learning"
       }
     ],
     "socialImageAlt": "Abstract latent landscape with single-cell clusters distributed across a folded surface.",
     "heroArtAlt": "Abstract latent landscape with single-cell clusters distributed across a folded surface.",
-    "heroArtCaption": "Single Cell & Spatial · conceptual illustration"
+    "heroArtCaption": "Single Cell & Spatial · conceptual illustration",
+    "learningResources": [
+      {
+        "title": "Machine learning notebooks",
+        "description": "Python notebooks using standard datasets, with examples designed to run in Google Colab.",
+        "url": "https://github.com/martings/ML_Practica_y_Herramientas",
+        "label": "Browse notebooks"
+      }
+    ]
   },
   "es": {
     "nav": [
@@ -304,7 +377,7 @@
     "language": "Read in English",
     "eyebrow": "Bioinformago",
     "hero": "Martín E. García Solá",
-    "intro": "Trabajo en regulación génica y poliadenilación alternativa (APA) a través del análisis de célula única y espacial. Mis intereses computacionales incluyen flujos reproducibles, computación de alto rendimiento y aprendizaje profundo.",
+    "intro": "Trabajo en regulación génica y poliadenilación alternativa (APA) a través del análisis de célula única y espacial. Mi trabajo de software abarca flujos con Nextflow, cómputo HPC/GPU y redes neuronales sobre grafos para estudiar la regulación del RNA.",
     "role": "Lead Bioinformatician en ZS",
     "degree": "Departamento de Computación - Universidad de Buenos Aires",
     "cta": "Explorar repositorios",
@@ -339,13 +412,13 @@
         "Desarrollo de flujos de análisis portables con Nextflow, contenedores e infraestructura HPC/GPU para biología computacional."
       ],
       [
-        "Aprendizaje profundo",
-        "Interés en aprendizaje de representaciones y métodos de deep learning para datos biológicos, con atención a la evaluación de modelos y la interpretación biológica."
+        "Deep learning y grafos regulatorios",
+        "Desarrollo de redes neuronales sobre grafos heterogéneos en UTRNNet para aprender representaciones regulatorias del RNA, con reconstrucción de características enmascaradas, evaluación sobre genes reservados y ensayos exploratorios de perturbaciones."
       ]
     ],
     "projectLabel": "02 / Software y proyectos",
     "projectTitle": "Software científico y proyectos colaborativos",
-    "projectIntro": "Repositorios públicos para regulación del RNA, análisis de célula única y espacial, junto con desarrollo colaborativo de flujos de análisis. Los artículos relacionados se enlazan cuando están disponibles.",
+    "projectIntro": "Software público organizado en flujos de APA de célula única, deep learning sobre grafos e investigación colaborativa. Cada proyecto enlaza a su repositorio y, cuando corresponde, a métodos, informes de evaluación o artículos asociados.",
     "featured": "Destacado / Regulación génica y APA",
     "repo": "Ver repositorio",
     "paper": "Artículo relacionado",
@@ -386,7 +459,7 @@
     "bio": [
       "Soy bioinformático, con formación en biología molecular y un doctorado de la Universidad de Buenos Aires. Mi trabajo integra investigación biológica, análisis computacional y desarrollo de software científico.",
       "Mi investigación abarcó biología de la glándula mamaria, oncogénesis viral y regulación del RNA. Actualmente me interesan la regulación génica, incluida la poliadenilación alternativa, y su estudio mediante transcriptómica de célula única y espacial.",
-      "Trabajo como Lead Bioinformatician en ZS y soy docente del Departamento de Computación (DC), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires. Mis intereses computacionales incluyen flujos reproducibles, computación HPC/GPU y aprendizaje profundo."
+      "Trabajo como Lead Bioinformatician en ZS y soy docente del Departamento de Computación (DC), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires. Mi trabajo actual de software incluye flujos reproducibles, cómputo HPC/GPU y redes neuronales sobre grafos para representaciones regulatorias del RNA."
     ],
     "portrait": "Retrato de Martín E. García Solá",
     "connect": "Contacto y perfiles profesionales",
@@ -413,12 +486,69 @@
         "url": "https://github.com/collaborativebioinformatics/SVantigen"
       },
       {
-        "label": "Proyectos públicos de software",
-        "url": "#projects"
+        "label": "Explorar UTRNNet e informes públicos",
+        "url": "#deep-learning"
       }
     ],
     "socialImageAlt": "Paisaje latente abstracto con clusters de células únicas distribuidos sobre una superficie plegada.",
     "heroArtAlt": "Paisaje latente abstracto con clusters de células únicas distribuidos sobre una superficie plegada.",
-    "heroArtCaption": "Single Cell y Spatial · ilustración conceptual"
-  }
+    "heroArtCaption": "Single Cell y Spatial · ilustración conceptual",
+    "learningResources": [
+      {
+        "title": "Notebooks de aprendizaje automático",
+        "description": "Notebooks de Python con conjuntos de datos clásicos y ejemplos preparados para ejecutar en Google Colab.",
+        "url": "https://github.com/martings/ML_Practica_y_Herramientas",
+        "label": "Explorar notebooks"
+      }
+    ]
+  },
+  "featuredProject": "scpolaseq",
+  "projectGroups": [
+    {
+      "id": "deep-learning",
+      "en": {
+        "title": "Deep learning for gene regulation",
+        "intro": "From evidence-aware regulatory graphs to neural representations. UTRNNet is an active research prototype with public architecture and exploratory benchmark reports."
+      },
+      "es": {
+        "title": "Deep learning para regulación génica",
+        "intro": "De grafos regulatorios con categorías de evidencia a representaciones neuronales. UTRNNet es un prototipo de investigación con arquitectura pública e informes de evaluaciones exploratorias."
+      },
+      "projects": [
+        "utrnnet"
+      ]
+    },
+    {
+      "id": "rna-apa",
+      "en": {
+        "title": "RNA regulation & APA tools",
+        "intro": "Complementary tools for downstream analysis, visualization and regulatory graph construction."
+      },
+      "es": {
+        "title": "Herramientas para regulación del RNA y APA",
+        "intro": "Herramientas complementarias para análisis downstream, visualización y construcción de grafos regulatorios."
+      },
+      "projects": [
+        "utrnet",
+        "scpolaseq-downstream",
+        "scapaview"
+      ]
+    },
+    {
+      "id": "collaborations",
+      "en": {
+        "title": "Collaborations & published research",
+        "intro": "Shared software and analysis code, with links to original repositories and associated papers."
+      },
+      "es": {
+        "title": "Colaboraciones e investigación publicada",
+        "intro": "Software compartido y código de análisis, con enlaces a los repositorios originales y los artículos asociados."
+      },
+      "projects": [
+        "nnclinssoap",
+        "mammary-atlas",
+        "svantigen"
+      ]
+    }
+  ]
 }

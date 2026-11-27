@@ -44,3 +44,26 @@ Verify preferred public contact address and exact job-title wording before event
 Megas update: the owner supplied the preferred Bioinformagician/Bioinformago identity, deep-learning focus and current DC–UBA teaching affiliation. The displayed background now follows that wording and omits the earlier research-institute affiliation.
 
 Selected hero artwork: the owner supplied an externally generated raster reference and selected color adaptation C. Conventional color, contrast and paper-background adjustments were made without AI regeneration. It is presented as a conceptual illustration, not experimental data. Original source remains local; only optimized approved derivatives are published. The personal portrait remains in About.
+
+## Public repository refresh — 27 November 2026
+
+Repository visibility was checked through the GitHub connector before reading and inclusion. Descriptions use public default-branch code, documentation and merged commits only. Internal filesystem links appearing in upstream reports were not copied into this portfolio. The existing publication list is unchanged.
+
+### UTRNNet: implemented deep learning
+
+- Public source snapshot: [UTRNNet at 9eb285b](https://github.com/martings/UTRNNet/tree/9eb285b5ef0ab6b75cc13ddbccdcb326a50f5df7). The [README](https://github.com/martings/UTRNNet/blob/9eb285b5ef0ab6b75cc13ddbccdcb326a50f5df7/README.md) identifies it as a separate extension of scpolaseq_utrnet, with preserved upstream history.
+- [Implemented encoder](https://github.com/martings/UTRNNet/blob/9eb285b5ef0ab6b75cc13ddbccdcb326a50f5df7/src/utrnnet/models/hetero_gnn.py): PyTorch Geometric TransformerConv-based heterogeneous message passing, node-type projections and reconstruction decoders. The perturbation-conditioned head in this module is explicitly a scaffold; the site does not describe it as a validated perturbation-response model.
+- [Architecture and data schema](https://github.com/martings/UTRNNet/blob/9eb285b5ef0ab6b75cc13ddbccdcb326a50f5df7/docs/architecture/CELL_REGULATORY_STATE_V0_1.md): typed nodes and relations; explicit missingness, evidence categories and anti-leakage handling.
+- [M1–M2 experiment report](https://github.com/martings/UTRNNet/blob/9eb285b5ef0ab6b75cc13ddbccdcb326a50f5df7/docs/experiments/M1_M2_EXPERIMENT_REPORT_AND_BACKLOG.md): masked-feature reconstruction, held-out-gene split, non-graph baselines, randomized-edge controls and ablations on PBMC1k. These are exploratory reconstruction experiments, not evidence of causal regulation or measured binding. No headline performance numbers or general superiority claims were added.
+- [Tahoe pilot report](https://github.com/martings/UTRNNet/blob/9eb285b5ef0ab6b75cc13ddbccdcb326a50f5df7/docs/experiments/TAHOE_PILOT_BENCHMARK.md): bounded expression-change pilot with sample-isolated evaluation. Tahoe does not supply APA measurements or a continuous time course; the site states the APA limitation and makes no causal, clinical or broad generalization claim.
+
+### RNA/APA workflow updates
+
+- [scpolaseq_utrnet at 0028b73](https://github.com/martings/scpolaseq_utrnet/tree/0028b7394e045e9e820f7b26596d594da3026115): versioned graph exports and a separate regulatory-signature format. The [README](https://github.com/martings/scpolaseq_utrnet/blob/0028b7394e045e9e820f7b26596d594da3026115/README.md) distinguishes observed counts, annotation-derived structure and candidate interactions. This remains the graph-construction project, separate from the UTRNNet neural extension.
+- [scPolASeq modularization at 8766bd5](https://github.com/martings/scPolASeq/commit/8766bd53bfba69bfc7ca34d59f2f9e9aa8ae4a2b): Sierra CountPeaks module, staged SCAPTURE and nf-test suites. [Module metadata](https://github.com/martings/scPolASeq/blob/8766bd53bfba69bfc7ca34d59f2f9e9aa8ae4a2b/modules/nf-core/sierra/countpeaks/meta.yml) supports the description. The website says conventions, not acceptance into the official nf-core distribution. Sierra and SCAPTURE retain their original tool identities; no sole authorship of those tools is implied.
+- scPolASeq_downstream and scAPAview public READMEs remain consistent with their existing method descriptions. The original NovoNordisk-OpenSource/nnclinssoap repository is retained and credited; the personal fork is not substituted. SVantigen's README still marks neoantigen prediction as future work, so that status is preserved.
+
+### Teaching and selection
+
+- [ML_Practica_y_Herramientas README](https://github.com/martings/ML_Practica_y_Herramientas/blob/main/README.md), blob f5c790d01d0e747cb66de94a33a3cc0a52bbd765, describes Python machine-learning notebooks with standard datasets and Colab use. Added as educational resources without assigning a course, institutional role or deep-learning claim.
+- Public legacy imaging code and GPU experiments were inspected or discovered but not promoted as new deep-learning work. Forks of Sierra, SCAPTURE, nnclinssoap and nf-modules were not presented as independently authored projects. No private repositories or unpublished local analyses were used.

@@ -1059,3 +1059,31 @@ h2 {
 .paper-landscape img {height:auto;}
 .paper-landscape figcaption {color:var(--muted);font-size:10px;text-align:center;margin-top:8px;}
 @media(max-width:650px){.brand-spatial .science-figure.paper-landscape{width:100%;}}
+
+/* Public project areas and the UTRNNet research prototype. */
+.project-group { margin-top:3.5rem; scroll-margin-top:2rem; }
+.project-group-heading { padding-bottom:1.5rem; border-bottom:1px solid var(--line); }
+.project-group-heading h3 { font:400 clamp(1.65rem,2.5vw,2rem)/1.2 var(--serif); margin-bottom:.75rem; }
+.project-group-heading p { max-width:48rem; font-size:1rem; }
+.project-row { grid-template-columns:minmax(0,1fr) minmax(10rem,15rem); gap:2.5rem; }
+.project-row h4 { font-size:1.5rem; font-weight:550; line-height:1.3; letter-spacing:-.025em; margin:0 0 .75rem; overflow-wrap:anywhere; }
+.project-row p:not(.eyebrow),.project-details { font-size:1rem; line-height:1.75; }
+.project-details { color:var(--muted); margin:1rem 0 0; padding-left:1.2rem; }
+.project-details li + li { margin-top:.5rem; }
+.project-spotlight { padding:2rem; background:var(--light); margin-top:1rem; border:1px solid var(--line); }
+.project-resources { list-style:none; padding:0; margin:0; display:grid; gap:1rem; }
+.project-links a { font-size:.875rem; line-height:1.6; }
+.project-resources a { display:inline-block; }
+.project-row .eyebrow { font-size:.8125rem; letter-spacing:.06em; }
+.project-row .tags li { font-size:.8125rem; }
+.course-secondary h3 { margin-top:0; }
+.course-secondary { margin-top:1.5rem; }
+.course-secondary p { font-size:1rem; }
+.course-secondary a { font-size:.875rem; }
+@media(max-width:650px){
+ .project-row { grid-template-columns:minmax(0,1fr); gap:1rem; }
+ .project-links { grid-column:auto; padding-top:0; align-items:flex-start; }
+ .project-resources { flex-basis:100%; }
+ .project-spotlight { padding:1.25rem; }
+ .project-group { margin-top:2.5rem; }
+}
